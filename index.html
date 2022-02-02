@@ -28,7 +28,7 @@
 
         <nav class="navbar">
             <a class="nav-btn" href="#" title="Home"><img src="./src/icons/home.svg" alt="home"></a>
-            <a class="nav-btn" href="#" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
+            <a class="nav-btn" href="#content" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
             <a class="nav-btn" href="#" title="TV shows"><img src="./src/icons/tv.svg" alt="tv"></a>
             <a class="nav-btn" href="#" title="Popular"><img src="./src/icons/star.svg" alt="star"></a>
         </nav>
@@ -38,7 +38,10 @@
         <div class="scrollscreen">
 
             <div class="main">
-                <div class="overlay"></div>
+                <div class="main__image">
+                    <div class="overlay"></div>
+                    <img src="../src/img/background-img.png" alt="">
+                </div>
                 <div class="container">
                     <div class="main__inner">
                         <header class="header">
@@ -67,7 +70,7 @@
 
     </main>
 
-    <div class="content">
+    <div class="content" id="content">
         <div class="releases">
 
             <div class="label">
@@ -80,28 +83,33 @@
             <div class="releases-scroller">
 
                 <!-- Card1 -->
-                <div class="movie-card">
-                    <div class="movie-content">
-                        <a href="#" class="tag" title="tag">Fantasy</a>
-                        <a class="rating">
-                            <img src="./src/icons/rating.svg" alt="rating">
-                        </a>
-                        <h3 class="release-name">Wonder Woman 1984</h3>
+                <a href="#">
+
+                    <div class="movie-card">
+                        <div class="movie-content">
+                            <a href="#" class="tag" title="tag">Fantasy</a>
+                            <a class="rating">
+                                <img src="./src/icons/rating.svg" alt="rating">
+                            </a>
+                            <h3 class="release-name">Wonder Woman 1984</h3>
+                        </div>
+    
+                        <div class="label" id="movie-card-btn">
+                            <a href="#">
+                                <p>Watch now</p>
+                                <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                            </a>
+                        </div>
+    
+    
+                        <div class="movie-card-img">
+                            <div class="movie-card-overlay"></div>
+                            <img src="./src/img/card-img/img1.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="label" id="movie-card-btn">
-                        <a href="#">
-                            <p>Watch now</p>
-                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
-                        </a>
-                    </div>
-
-
-                    <div class="movie-card-img">
-                        <div class="movie-card-overlay"></div>
-                        <img src="./src/img/card-img/img1.png" alt="">
-                    </div>
-                </div>
+                </a>
+                
 
                 <!-- Card2 -->
                 <div class="movie-card">
@@ -203,9 +211,63 @@
                 </div>
 
 
+                <!-- Card6 -->
+                <div class="movie-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Action</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">Thunder Force</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="movie-card-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/card-img/img6.png" alt="">
+                    </div>
+                </div>
+
+
+                <!-- Card7 -->
+                <div class="movie-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Comedy</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">Tom & Jerry</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="movie-card-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/card-img/img7.png" alt="">
+                    </div>
+                </div>
+
+
             </div>
         </div>
+
+
     </div>
+
+
 </body>
 
 </html>
