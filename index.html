@@ -27,10 +27,10 @@
         </a>
 
         <nav class="navbar">
-            <a class="nav-btn" href="#" title="Home"><img src="./src/icons/home.svg" alt="home"></a>
-            <a class="nav-btn" href="#content" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
-            <a class="nav-btn" href="#" title="TV shows"><img src="./src/icons/tv.svg" alt="tv"></a>
-            <a class="nav-btn" href="#" title="Popular"><img src="./src/icons/star.svg" alt="star"></a>
+            <a class="nav-btn btn-icon" href="#" title="Home"><img src="./src/icons/home.svg" alt="home"></a>
+            <a class="nav-btn btn-icon" href="#content" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
+            <a class="nav-btn btn-icon" href="#" title="TV shows"><img src="./src/icons/tv.svg" alt="tv"></a>
+            <a class="nav-btn btn-icon" href="#" title="Popular"><img src="./src/icons/star.svg" alt="star"></a>
         </nav>
     </aside>
 
@@ -40,7 +40,7 @@
             <div class="main">
                 <div class="main__image">
                     <div class="overlay"></div>
-                    <img src="./src/img/background-img.png" alt="">
+                    <img src="../src/img/background-img.png" alt="">
                 </div>
                 <div class="container">
                     <div class="main__inner">
@@ -58,7 +58,7 @@
                                     forces of nature on the planet collide in a spectacular battle for the ages.</p>
                             </article>
 
-                            <div class="button"><a href="#">Watch now</a></div>
+                            <a href="#" class="button">Watch now</a>
                         </header>
                     </div>
                 </div>
@@ -67,10 +67,20 @@
 
         </div>
 
+        <div class="extra">
+            <a href="#" id="account-btn" class="extra__item btn-icon"><img src="./src/icons/account.svg" alt="account"></a>
+            <a href="#" id="settings-btn" class="extra__item btn-icon"><img src="./src/icons/settings.svg" alt="settings"></a>
+        </div>
 
+        <!-- <div class="scroll">
+            <a href="#" class="scroll__item" id="scroll__item-left">
+            </a>
+            <a href="#" class="scroll__item" id="scroll__item-right">
+            </a>
+        </div> -->
     </main>
 
-    <div class="content" id="content">
+    <section class="content" id="content">
         <div class="releases">
 
             <div class="label">
@@ -83,7 +93,6 @@
             <div class="releases-scroller">
 
                 <!-- Card1 -->
-                <a href="#">
 
                     <div class="movie-card">
                         <div class="movie-content">
@@ -107,8 +116,6 @@
                             <img src="./src/img/card-img/img1.png" alt="">
                         </div>
                     </div>
-
-                </a>
                 
 
                 <!-- Card2 -->
@@ -265,7 +272,7 @@
         </div>
 
 
-    </div>
+    </section>
 
 
 </body>
