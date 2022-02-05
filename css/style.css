@@ -136,8 +136,8 @@ body {
   background-color: #a5a5a5;
 }
 
-/* MAIN & SCROLLSCREEN */
-.scrollscreen {
+/* MAIN & SCROLLSCREEN*/
+.scrollScreen {
   width: 100%;
   background: #1D1D1D;
   position: fixed;
@@ -153,13 +153,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
   background: #2a2a2a;
 }
 
 .container {
   max-width: 1170px;
   margin-left: 236px;
+  position: absolute;
+  z-index: 10;
 }
 
 .main__image {
@@ -195,8 +197,6 @@ body {
   width: inherit;
   height: inherit;
   font-family: Roboto;
-  position: relative;
-  z-index: 1000;
 }
 
 .header .title {
@@ -292,8 +292,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
+  position: fixed;
   left: 88.3%;
+  z-index: 1;
 }
 
 .extra__item {
@@ -311,16 +312,22 @@ body {
 }
 
 .scroll {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 1795px;
   height: 648px;
   margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 0;
 }
 
 .scroll__item {
+  cursor: pointer;
+  border: 0;
   display: inline-block;
   width: 161px;
   height: 100%;
