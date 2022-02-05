@@ -16,10 +16,11 @@
      <!-- links -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-
+    <script src="./js/main.js" async></script>
 </head>
 
 <body>
+    <!-- NAVIGATION -->
     <aside class="navigation">
         <a href="#" class="logo" title="Main page Movi">
             <img src="./src/icons/play 1.svg" alt="logo">
@@ -35,12 +36,12 @@
     </aside>
 
     <main>
-        <div class="scrollscreen">
-
+        <!-- SCROLLSCREEN -->
+        <div class="scrollScreen">
             <div class="main">
                 <div class="main__image">
                     <div class="overlay"></div>
-                    <img src="./src/img/background-img.png" alt="">
+                    <img id="bcg-img" src="./src/img/background-img1.png" alt="">
                 </div>
                 <div class="container">
                     <div class="main__inner">
@@ -63,23 +64,73 @@
                     </div>
                 </div>
             </div>
+<!-- 
+            <div class="main">
+                <div class="main__image">
+                    <div class="overlay"></div>
+                    <img id="bcg-img" src="./src/img/background-img2.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="main__inner">
+                        <header class="header">
+                            <a href="#" class="tag" title="tag">Fantasy</a>
+                            <a class="rating">
+                                <img src="./src/icons/rating.svg" alt="rating">
+                            </a>
+                            <article>
+                                <h1 class="title">
+                                    Wonder Woman 1984
+                                </h1>
+                                <p class="lead">A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.</p>
+                            </article>
 
+                            <a href="#" class="button">Watch now</a>
+                        </header>
+                    </div>
+                </div>
+            </div>
 
+            <div class="main">
+                <div class="main__image">
+                    <div class="overlay"></div>
+                    <img id="bcg-img" src="./src/img/background-img3.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="main__inner">
+                        <header class="header">
+                            <a href="#" class="tag" title="tag">Fantasy</a>
+                            <a class="rating">
+                                <img src="./src/icons/rating.svg" alt="rating">
+                            </a>
+                            <article>
+                                <h1 class="title">
+                                    Zack Snyder's Justice League
+                                </h1>
+                                <p class="lead">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+                            </article>
+
+                            <a href="#" class="button">Watch now</a>
+                        </header>
+                    </div>
+                </div>
+            </div> -->
         </div>
 
+        <!-- EXTRA ELEMENTS -->
         <div class="extra">
             <a href="#" id="account-btn" class="extra__item btn-icon"><img src="./src/icons/account.svg" alt="account"></a>
             <a href="#" id="settings-btn" class="extra__item btn-icon"><img src="./src/icons/settings.svg" alt="settings"></a>
         </div>
 
-        <!-- <div class="scroll">
-            <a href="#" class="scroll__item" id="scroll__item-left">
-            </a>
-            <a href="#" class="scroll__item" id="scroll__item-right">
-            </a>
-        </div> -->
+        <!-- SCROLL BUTTONS -->
+        <div class="scroll">
+            <button class="scroll__item" id="scroll__item-left">
+            </button>
+            <button class="scroll__item" id="scroll__item-right">
+            </button>
+        </div>
     </main>
-
+    
     <section class="content" id="content">
         <div class="releases">
 
