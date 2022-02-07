@@ -14,27 +14,12 @@
     <title>Movi - watch movies online!</title>
     <link rel="shortcut icon" type="image/x-icon" href="./src/favicon.ico">
      <!-- links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <script src="./js/main.js" async></script>
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <aside class="navigation">
-        <a href="#" class="logo" title="Main page Movi">
-            <img src="./src/icons/play 1.svg" alt="logo">
-            <img src="./src/icons/play 2.svg" alt="logo" class="animated-logo">
-        </a>
-
-        <nav class="navbar">
-            <a class="nav-btn btn-icon" href="#" title="Home"><img src="./src/icons/home.svg" alt="home"></a>
-            <a class="nav-btn btn-icon" href="#content" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
-            <a class="nav-btn btn-icon" href="#" title="TV shows"><img src="./src/icons/tv.svg" alt="tv"></a>
-            <a class="nav-btn btn-icon" href="#" title="Popular"><img src="./src/icons/star.svg" alt="star"></a>
-        </nav>
-    </aside>
-
     <main>
         <!-- SCROLLSCREEN -->
         <div class="scrollScreen">
@@ -123,16 +108,16 @@
         </div>
 
         <!-- SCROLL BUTTONS -->
-        <div class="scroll">
+        <!-- !<div class="scroll">
             <button class="scroll__item" id="scroll__item-left">
             </button>
             <button class="scroll__item" id="scroll__item-right">
             </button>
-        </div>
+        </div> -->
     </main>
     
     <section class="content" id="content">
-        <div class="releases">
+        <section class="releases">
 
             <div class="label">
                 <a href="#">
@@ -145,7 +130,7 @@
 
                 <!-- Card1 -->
 
-                    <div class="movie-card">
+                    <div class="movie-card hover-card">
                         <div class="movie-content">
                             <a href="#" class="tag" title="tag">Fantasy</a>
                             <a class="rating">
@@ -170,7 +155,7 @@
                 
 
                 <!-- Card2 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Fantasy</a>
                         <a class="rating">
@@ -195,7 +180,7 @@
 
 
                 <!-- Card3 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Drama</a>
                         <a class="rating">
@@ -220,7 +205,7 @@
 
 
                 <!-- Card4 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Black humor</a>
                         <a class="rating">
@@ -245,7 +230,7 @@
 
 
                 <!-- Card5 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Comedy</a>
                         <a class="rating">
@@ -270,7 +255,7 @@
 
 
                 <!-- Card6 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Action</a>
                         <a class="rating">
@@ -295,7 +280,7 @@
 
 
                 <!-- Card7 -->
-                <div class="movie-card">
+                <div class="movie-card hover-card">
                     <div class="movie-content">
                         <a href="#" class="tag" title="tag">Comedy</a>
                         <a class="rating">
@@ -320,12 +305,135 @@
 
 
             </div>
-        </div>
+        </section>
 
+        <section class="featured">
+
+            <div class="label">
+                <a href="#">
+                    <p>New releases</p>
+                    <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                </a>
+            </div>
+
+            <div class="featured__scroller">
+
+                <!-- CARD1 -->
+                <div class="featured__inner movie-card hover-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Sci-Fi & Fantasy</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">Game of thrones</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="featured-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/featured-img/img1.png" alt="">
+                    </div>
+                </div>
+
+                <!-- CARD2 -->
+                <div class="featured__inner movie-card hover-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Sci-Fi & Fantasy</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">The Falcon and the Winter Soldier</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="featured-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/featured-img/img2.png" alt="">
+                    </div>
+                </div>
+
+                 <!-- CARD3 -->
+                 <div class="featured__inner movie-card hover-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Sci-Fi & Fantasy</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">WandaVision</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="featured-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/featured-img/img3.png" alt="">
+                    </div>
+                </div>
+
+                <!-- CARD4 -->
+                <div class="featured__inner movie-card hover-card">
+                    <div class="movie-content">
+                        <a href="#" class="tag" title="tag">Action & Adventure</a>
+                        <a class="rating">
+                            <img src="./src/icons/rating.svg" alt="rating">
+                        </a>
+                        <h3 class="release-name">Fear the Walking Dead</h3>
+                    </div>
+
+                    <div class="label" id="movie-card-btn">
+                        <a href="#">
+                            <p>Watch now</p>
+                            <img class="arrow-animated" src="./src/icons/arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+
+
+                    <div class="featured-img">
+                        <div class="movie-card-overlay"></div>
+                        <img src="./src/img/featured-img/img4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
     </section>
 
-
+        <!-- NAVIGATION -->
+        <aside class="navigation">
+            <a href="#" class="logo" title="Main page Movi">
+                <img src="./src/icons/play 1.svg" alt="logo">
+                <img src="./src/icons/play 2.svg" alt="logo" class="animated-logo">
+            </a>
+    
+            <nav class="navbar">
+                <a class="nav-btn btn-icon" href="#" title="Home"><img src="./src/icons/home.svg" alt="home"></a>
+                <a class="nav-btn btn-icon" href="#content" title="Movies"><img src="./src/icons/movie.svg" alt="movie"></a>
+                <a class="nav-btn btn-icon" href="#" title="TV shows"><img src="./src/icons/tv.svg" alt="tv"></a>
+                <a class="nav-btn btn-icon" href="#" title="Popular"><img src="./src/icons/star.svg" alt="star"></a>
+            </nav>
+        </aside>
 </body>
 
 </html>
