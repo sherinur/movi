@@ -71,36 +71,6 @@
   }
 }
 
-@-webkit-keyframes scrollscreen {
-  0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 98%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scrollscreen {
-  0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 98%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 /* VARRIABLES */
 body,
 a {
@@ -292,7 +262,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  position: absolute;
   left: 88.3%;
   z-index: 1;
 }
@@ -623,16 +593,65 @@ body {
           animation: none;
 }
 
-.movie-card:hover .movie-content {
+.hover-card:hover .movie-content {
   margin-bottom: 64px;
 }
 
-.movie-card:hover #movie-card-btn {
+.hover-card:hover #movie-card-btn {
   opacity: 100%;
 }
 
-.movie-card:hover .movie-card-img {
+.hover-card:hover .movie-card-img, .hover-card:hover .featured-img img {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
+}
+
+/* FEATURED */
+.featured {
+  height: 736px;
+  width: 100%;
+}
+
+.featured .label {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.featured .featured__scroller {
+  padding-left: 70px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured .featured__inner {
+  width: 504px;
+  height: 736px;
+  margin: 0;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.featured .featured__inner .release-name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.featured .featured__inner .movie-content {
+  width: 456px;
+}
+
+.featured .featured__inner .featured-img {
+  width: inherit;
+  height: inherit;
+}
+
+.featured .featured__inner .featured-img img {
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
 }
 /*# sourceMappingURL=style.css.map */
